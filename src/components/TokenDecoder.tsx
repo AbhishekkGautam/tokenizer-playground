@@ -4,11 +4,11 @@ import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Copy, Wand2 } from "lucide-react";
-import { tokenizer } from "@/lib/tokenizer";
+import { Token, tokenizer } from "@/lib/tokenizer";
 import { useToast } from "@/hooks/use-toast";
 
 interface TokenDecoderProps {
-  tokens: any[];
+  tokens: Token[];
 }
 
 export const TokenDecoder = ({ tokens }: TokenDecoderProps) => {

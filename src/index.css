@@ -34,7 +34,7 @@ All colors MUST be HSL.
 
     --border: 240 5% 20%;
     --input: 240 5% 18%;
-    --ring: 270 75% 60%;
+    --ring: 220 13% 40%;
 
     --radius: 0.75rem;
 
@@ -108,7 +108,7 @@ All colors MUST be HSL.
 
     --border: 240 3% 85%;
     --input: 240 3% 92%;
-    --ring: 270 80% 60%;
+    --ring: 220 13% 50%;
 
     /* Light mode tokenizer colors - more subtle */
     --token-surface: 240 3% 95%;
