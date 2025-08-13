@@ -1,0 +1,154 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 240 6% 12%;
+    --foreground: 240 4% 92%;
+
+    --card: 240 5% 15%;
+    --card-foreground: 240 4% 92%;
+
+    --popover: 240 5% 15%;
+    --popover-foreground: 240 4% 92%;
+
+    --primary: 270 75% 60%;
+    --primary-foreground: 240 6% 12%;
+
+    --secondary: 240 5% 18%;
+    --secondary-foreground: 240 4% 82%;
+
+    --muted: 240 5% 18%;
+    --muted-foreground: 240 3% 62%;
+
+    --accent: 240 5% 18%;
+    --accent-foreground: 240 4% 82%;
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 240 4% 92%;
+
+    --border: 240 5% 20%;
+    --input: 240 5% 18%;
+    --ring: 270 75% 60%;
+
+    --radius: 0.75rem;
+
+    /* Tokenizer specific colors - more subtle */
+    --token-surface: 240 5% 14%;
+    --token-border: 240 4% 22%;
+    --stats-accent: 180 60% 70%;
+    --stats-secondary: 45 70% 75%;
+
+    /* Elegant pastel token colors */
+    --token-1: 350 40% 78%;
+    --token-2: 30 40% 78%;
+    --token-3: 60 40% 78%;
+    --token-4: 120 45% 75%;
+    --token-5: 180 45% 75%;
+    --token-6: 240 45% 75%;
+    --token-7: 300 45% 75%;
+    --token-8: 15 45% 75%;
+
+    /* Softer shadows */
+    --shadow-token: 0 1px 3px 0 hsl(240 5% 8% / 0.2),
+      0 1px 2px 0 hsl(240 5% 8% / 0.15);
+    --shadow-card: 0 4px 6px -1px hsl(240 5% 8% / 0.2),
+      0 2px 4px -1px hsl(240 5% 8% / 0.15);
+    --shadow-glow: 0 0 20px hsl(270 75% 60% / 0.2),
+      0 0 40px hsl(270 75% 60% / 0.08);
+
+    --radius: 0.75rem;
+
+    --sidebar-background: 0 0% 98%;
+
+    --sidebar-foreground: 240 5.3% 26.1%;
+
+    --sidebar-primary: 240 5.9% 10%;
+
+    --sidebar-primary-foreground: 0 0% 98%;
+
+    --sidebar-accent: 240 4.8% 95.9%;
+
+    --sidebar-accent-foreground: 240 5.9% 10%;
+
+    --sidebar-border: 220 13% 91%;
+
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .light {
+    --background: 240 6% 97%;
+    --foreground: 240 4% 12%;
+
+    --card: 240 4% 100%;
+    --card-foreground: 240 4% 12%;
+
+    --popover: 240 4% 100%;
+    --popover-foreground: 240 4% 12%;
+
+    --primary: 270 80% 60%;
+    --primary-foreground: 240 6% 97%;
+
+    --secondary: 240 3% 92%;
+    --secondary-foreground: 240 4% 25%;
+
+    --muted: 240 3% 92%;
+    --muted-foreground: 240 3% 50%;
+
+    --accent: 240 3% 92%;
+    --accent-foreground: 240 4% 25%;
+
+    --destructive: 0 75% 50%;
+    --destructive-foreground: 240 6% 97%;
+
+    --border: 240 3% 85%;
+    --input: 240 3% 92%;
+    --ring: 270 80% 60%;
+
+    /* Light mode tokenizer colors - more subtle */
+    --token-surface: 240 3% 95%;
+    --token-border: 240 3% 85%;
+    --stats-accent: 180 65% 55%;
+    --stats-secondary: 45 75% 60%;
+
+    /* Light mode shadows */
+    --shadow-token: 0 1px 3px 0 hsl(240 4% 20% / 0.08),
+      0 1px 2px 0 hsl(240 4% 20% / 0.06);
+    --shadow-card: 0 4px 6px -1px hsl(240 4% 20% / 0.08),
+      0 2px 4px -1px hsl(240 4% 20% / 0.06);
+    --shadow-glow: 0 0 20px hsl(270 80% 60% / 0.15);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  /* Ensure tooltips appear above everything */
+  [data-radix-popper-content-wrapper] {
+    z-index: 99999 !important;
+    pointer-events: none;
+  }
+
+  [role="tooltip"] {
+    z-index: 99999 !important;
+    pointer-events: auto;
+  }
+
+  /* Ensure token containers don't clip tooltips */
+  .token-container {
+    overflow: visible !important;
+  }
+}
