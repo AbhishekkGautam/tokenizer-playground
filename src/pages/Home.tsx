@@ -57,7 +57,7 @@ const Home = () => {
                 className="flex h-7 sm:h-8 px-2 sm:px-3 text-xs"
               >
                 <a
-                  href="https://github.com"
+                  href="https://github.com/AbhishekkGautam/tokenizer-playground"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center space-x-0.5"
