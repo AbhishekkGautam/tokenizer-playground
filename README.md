@@ -208,7 +208,7 @@ interface Token {
 - Special color scheme for whitespace tokens
 - Enhanced visibility for space characters
 
-## 📊 Statistics & Metrics
+## Statistics & Metrics
 
 The visualizer provides comprehensive tokenization analytics:
 
@@ -327,7 +327,7 @@ console.log(colors); // { background: "#...", text: "#..." }
    - Comparison between different algorithms
    - Interactive tutorials and examples -->
 
-## 🤝 Contributing
+## Contributing
 
 1. Fork the repository
 2. Create a feature branch: `git checkout -b feature/amazing-feature`
