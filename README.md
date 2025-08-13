@@ -3,11 +3,11 @@
 A modern, interactive web application for real-time text tokenization visualization using BPE (Byte Pair Encoding) algorithms.
 
 <!-- ![Token Visualizer Demo](https://img.shields.io/badge/Status-Production%20Ready-green) -->
-![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue)
-![React](https://img.shields.io/badge/Framework-React%2018-61dafb)
-![Vite](https://img.shields.io/badge/Build-Vite-646cff)
+<!-- ![TypeScript](https://img.shields.io/badge/TypeScript-100%25-blue) -->
+<!-- ![React](https://img.shields.io/badge/Framework-React%2018-61dafb) -->
+<!-- ![Vite](https://img.shields.io/badge/Build-Vite-646cff) -->
 
-## 🚀 Features
+## Features
 
 - **Real-time Tokenization**: See your text tokenized instantly as you type
 - **Interactive Token Visualization**: Color-coded tokens with detailed hover tooltips
@@ -18,7 +18,7 @@ A modern, interactive web application for real-time text tokenization visualizat
 - **Responsive Design**: Works perfectly across desktop, tablet, and mobile devices
 - **Clean Architecture**: Modular, maintainable React components with TypeScript
 
-## 🏗️ Architecture
+## Architecture
 
 ### Core Components
 
@@ -47,7 +47,7 @@ A modern, interactive web application for real-time text tokenization visualizat
    - Decode functionality with error handling
    - Copy-to-clipboard integration
 
-## 🧠 How It Works
+## How It Works
 
 ### Tokenization Algorithm
 
@@ -101,7 +101,7 @@ The visualizer uses a sophisticated BPE-like approach:
 - `<|pad|>`: Padding tokens for sequence alignment
 - `<|unk|>`: Unknown tokens for out-of-vocabulary handling
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -131,7 +131,7 @@ The visualizer uses a sophisticated BPE-like approach:
 
 4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## 🛠️ Built With
+## Built With
 
 - **React 18** - Frontend framework
 - **TypeScript** - Type safety and better development experience
@@ -161,7 +161,7 @@ The visualizer uses a sophisticated BPE-like approach:
    - Click "Decode Tokens" to convert back to text
    - Copy decoded result to clipboard
 
-## 🔧 API Reference
+## API Reference
 
 ### Core Tokenizer Functions
 
@@ -217,7 +217,7 @@ The visualizer provides comprehensive tokenization analytics:
 - **Unique Tokens**: Number of distinct token IDs used
 - **Compression Ratio**: Efficiency metric (lower = better compression)
 
-## 🎯 Example Usage
+## Example Usage
 
 ### Basic Tokenization
 
