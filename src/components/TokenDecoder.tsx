@@ -101,7 +101,7 @@ export const TokenDecoder = ({ tokens }: TokenDecoderProps) => {
               value={tokenIds}
               onChange={e => setTokenIds(e.target.value)}
               placeholder="e.g., 1, 5, 10, 23"
-              className="h-[60px] sm:h-[80px] bg-card/50 border-border/50 font-mono text-xs resize-none focus:ring-2 focus:ring-gray-400/50 focus:border-gray-400/50 transition-all duration-200"
+              className="h-[120px] lg:h-[80px] bg-card/50 border-border/50 font-mono text-xs resize-none focus:ring-2 focus:ring-gray-400/50 focus:border-gray-400/50 transition-all duration-200"
               rows={2}
             />
           </div>
@@ -117,7 +117,7 @@ export const TokenDecoder = ({ tokens }: TokenDecoderProps) => {
 
           {decodedText && (
             <div className="space-y-1.5 flex-1 min-h-0">
-              <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 sm:gap-0">
+              <div className="flex items-center justify-between gap-1 mt-1 lg:mt-0">
                 <label className="text-xs font-medium text-foreground/80">
                   Decoded Text Result
                 </label>
@@ -131,7 +131,7 @@ export const TokenDecoder = ({ tokens }: TokenDecoderProps) => {
                   Copy
                 </Button>
               </div>
-              <div className="p-2 bg-card/50 border border-border/50 rounded-md flex-1 overflow-y-auto min-h-0">
+              <div className="p-2 bg-card/50 border border-border/50 rounded-md flex-1 overflow-y-auto min-h-0 max-h-[120px] lg:max-h-[90px]">
                 <p className="text-xs font-mono text-foreground whitespace-pre-wrap">
                   {decodedText}
                 </p>

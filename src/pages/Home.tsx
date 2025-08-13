@@ -85,7 +85,7 @@ const Home = () => {
             </div>
 
             {/* Main Grid */}
-            <div className="flex-1 grid grid-cols-1 xl:grid-cols-4 gap-3 sm:gap-4 min-h-0">
+            <div className="flex-1 grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-3 sm:gap-4 min-h-0">
               <div className="xl:col-span-2 flex flex-col space-y-3 min-h-0">
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
